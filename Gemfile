@@ -13,8 +13,16 @@ gem "puma", "~> 5.0"
 # gem "jbuilder"
 
 # ActiveAdmin
+gem 'activeadmin', github: 'activeadmin/activeadmin', branch: 'master' # FIXME: revert to stable
+
+# Required for ActiveAdmin
+gem 'sass-rails'
+
+# Plus integrations with:
 gem 'devise'
-gem 'activeadmin'
+gem 'cancancan'
+gem 'draper'
+gem 'pundit'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
